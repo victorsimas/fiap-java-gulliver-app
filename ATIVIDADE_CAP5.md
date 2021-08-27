@@ -1,4 +1,4 @@
-# Getters and Setters - FIAP - Fase 5
+# Collections - FIAP - Fase 5
 
 ## Atividade 2 - Capítulo 5
 
