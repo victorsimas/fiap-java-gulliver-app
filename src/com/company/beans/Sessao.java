@@ -1,17 +1,17 @@
 package com.company.beans;
 
-import com.company.services.UsuarioLoginService;
-
 import java.util.UUID;
 
 public class Sessao
 {
     private final UUID idSessao;
     private final Usuario usuarioInfo;
+    private final String accessToken;
 
-    public Sessao(String accessToken) throws Exception {
+    public Sessao(Usuario usuarioInfo, String accessToken) throws Exception {
+        this.accessToken = accessToken;
         this.idSessao = UUID.randomUUID();
-        this.usuarioInfo = UsuarioLoginService.login(accessToken);
+        this.usuarioInfo = usuarioInfo;
     }
 
     @Override
@@ -39,5 +39,16 @@ public class Sessao
 
     public UUID getIdSessao() {
         return this.idSessao;
+    }
+
+    public String getAccessToken() {
+        return accessToken;
+    }
+
+    public String getSessaoInfo()
+    {
+        return "\n\nIdUsuário : " +
+                this.getUsuarioInfo().getIdUsuario() +
+                "\nAccessToken : " + this.getAccessToken();
     }
 }
