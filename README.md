@@ -8,4 +8,4 @@ Verifique a atividade para ser corrigida nas seguintes documentações.
 
 [Atividade 1 - Capítulo 2 ](./ATIVIDADE_CAP2.md)
 
-[Atividade 2 - Capítulo 5 ](./ATIVIDADE_CAP2.md)
+[Atividade 2 - Capítulo 5 ](./ATIVIDADE_CAP5.md)
